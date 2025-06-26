@@ -18,13 +18,13 @@ jobs:
           id: stepVar
           env: 
             STEP_VAR: "Step level variable" 
-            run: |
-              echo ${{ github.actor }}
-              echo $GITHUB_JOB
-              echo $WF_VAR
-              echo $JOB_VAR
-              echo $STEP_VAR
-              echo ${{ vars.CONF_VAR }}
-              echo ${{ secrets.A_secret }}
+          run: |
+            echo ${{ github.actor }}
+            echo $GITHUB_JOB
+            echo $WF_VAR
+            echo $JOB_VAR
+            echo $STEP_VAR
+            echo ${{ vars.CONF_VAR }}
+            echo ${{ secrets.A_secret }}
               
           
